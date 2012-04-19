@@ -1,0 +1,320 @@
+/*------------------------------------*\
+  RESET
+\*------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0b1 | 201101
+   NOTE:WORK IN PROGRESS
+   USE WITH CAUTION AND TEST WITH ABANDON */
+
+html,body,div,span,applet,object,iframe,
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+a,abbr,acronym,address,big,cite,code,
+del,dfn,em,img,ins,kbd,q,s,samp,
+small,strike,strong,sub,sup,tt,var,
+b,u,i,center,
+dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td,
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary,
+time,mark,audio,video{
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  font:inherit;
+  vertical-align:baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section{
+  display:block;
+}
+body{
+  min-height: 1200px;
+  line-height:1;
+}
+ol,ul{
+  list-style:none;
+}
+blockquote,q{
+  quotes:none;
+}
+blockquote:before,blockquote:after,
+q:before,q:after{
+  content:'';
+  content:none;
+}
+/* remember to define visible focus styles!
+:focus{
+  outline:?????;
+} */
+
+/* remember to highlight inserts somehow! */
+ins{
+  text-decoration:none;
+}
+del{
+  text-decoration:line-through;
+}
+
+table{
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+/*------------------------------------*\
+  MAIN
+\*------------------------------------*/
+/* GO! */
+
+body {
+  font: 12px/18px Arial;
+  background: #eee;
+  padding: 0 25px;
+  color: #555;
+}
+
+html {
+       overflow-y: scroll;
+}
+div {
+  max-width: 500px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: bold;
+  font-size: 14px;
+  margin: 25px 0 10px;
+  color: #333;
+}
+
+div a {
+  color: #333;
+}
+
+div a:hover {
+  color: teal;
+}
+
+h1 {
+  font-size: 18px;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+a, .drop-down span {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover, .drop-down span:hover {
+  color: #fff;
+}
+
+.dropcordion {
+  margin-top: 25px;
+}
+
+.dropcordion>li>a, .dropcordion>li>span {
+background: #45484d; /* Old browsers */
+background: -moz-linear-gradient(top,  #45484d 0%, #535456 2%, #45484d 4%, #000000 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484d), color-stop(2%,#535456), color-stop(4%,#45484d), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #45484d 0%,#535456 2%,#45484d 4%,#000000 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #45484d 0%,#535456 2%,#45484d 4%,#000000 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #45484d 0%,#535456 2%,#45484d 4%,#000000 100%); /* IE10+ */
+background: linear-gradient(top,  #45484d 0%,#535456 2%,#45484d 4%,#000000 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+.dropcordion>li>a:hover, .dropcordion>li>span:hover {
+opacity: 0.9;
+}
+
+/* Sub Lists */
+
+.sub-menu li, .sub-menu a {
+  -webkit-transform: translateZ(0);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.sub-menu li {
+  background: #222;
+}
+
+.sub-menu li:hover {
+  background: #000;
+}
+
+.sub-menu a {
+  color: #ccc;
+}
+
+.sub-menu li:hover a {
+  color: #fff;
+}
+
+
+@media only screen and (min-width: 600px) {
+
+  .first a {
+    padding-left: 35px !important;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  .last a {
+    padding-right: 35px !important;
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .sub-menu .last {
+    -webkit-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  .drop-down span {
+    cursor: default;
+  }
+  
+  /* Base Nav Styles */
+
+  .dropcordion>li {
+    display: block;
+    float: left;
+  }
+
+  .dropcordion>li a, .dropcordion>li span {
+    display: block;
+    padding: 10px 20px;
+  }
+
+
+  /* Drop Down */
+
+  .sub-menu {
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .drop-down:hover .sub-menu {
+    max-height: 260px;
+  }  
+
+  .dropcordion>:hover>span {
+  background: #ffd65e; /* Old browsers */
+  background: -moz-linear-gradient(top,  #ffd65e 0%, #febf04 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffd65e), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #ffd65e 0%,#febf04 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #ffd65e 0%,#febf04 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #ffd65e 0%,#febf04 100%); /* IE10+ */
+  background: linear-gradient(top,  #ffd65e 0%,#febf04 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd65e', endColorstr='#febf04',GradientType=0 ); /* IE6-9 */
+  color: #333;
+  }
+
+}
+
+
+@media only screen and (max-width: 599px) {
+
+  body {
+    padding: 0;
+  }
+
+  div {
+    margin: 0 25px;
+  }
+
+  .drop-down span {
+    cursor: pointer;
+  }
+
+  .sub-menu {
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .drop-down :focus + .sub-menu {
+    max-height: 260px;
+  }
+
+  .drop-down:focus span {
+    color: #fff;
+  }
+
+  /* Sweet GFX */
+
+  .dropcordion li a, .drop-down span {
+    padding: 12px 25px;
+  }
+
+  .dropcordion li a, .drop-down span {
+    display: block;
+  }
+
+  .dropcordion .drop-down {
+    padding: 0;
+  }
+
+  .drop-down:focus .sub-menu {
+  -webkit-transition: all 0.5s 0.05s;
+  -moz-transition: all 0.5s 0.05s;
+  -o-transition: all 0.5s 0.05s;
+  transition: all 0.5s 0.05s;
+  }
+
+
+  .dropcordion :focus  {
+  background: #ffd65e; /* Old browsers */
+  background: -moz-linear-gradient(top,  #ffd65e 0%, #febf04 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffd65e), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #ffd65e 0%,#febf04 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #ffd65e 0%,#febf04 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #ffd65e 0%,#febf04 100%); /* IE10+ */
+  background: linear-gradient(top,  #ffd65e 0%,#febf04 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd65e', endColorstr='#febf04',GradientType=0 ); /* IE6-9 */
+  color: #333 !important;
+  }
+
+}
+
+.dropcordion>li>a, .dropcordion>li>span {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.sub-menu, .dropcordion span {
+  background: #fff;
+  -webkit-transform: translateZ(0);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}

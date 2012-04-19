@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<meta charset="utf-8">
+	<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+	<meta name="viewport" content="width=device-width">
+	<title>Responsive CSS3 Drop-Down to Accordion</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+<script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script></head>
+
+<body>
+
+
+
+	<div>
+
+	<h1>Responsive CSS3 Drop-Down to Accordion</h1>
+
+		<p>Created By <a href="http://twitter.com/teapoted">Ian Hansson @teapoted</a></p>
+		<p>Resize the browser to below 500 and the drop-down turns into an accordion. This is done all with CSS, using tabindex on the drop-downs to allow you to :focus them.</p>
+
+	<h2>Browser Support:</h2>
+
+		<p><strong>Best In Test</strong>: Firefox (transition performance) <br>
+		<strong>Full Support</strong>: Chrome, Firefox, Opera, Safari (latest versions of all browsers)<br>
+		<strong>Partial Support</strong>: IE9 (Functional, but does not support transitions) <br>
+		<strong>NOTE</strong>: This has not been made to gracefully degrade, although it's perfectly possible. </p>
+		<p>Mobile support for :focus is highly limited, why? I don't know. But the only way to get people to add something is to show what I can do and then whine about it not working.</p>
+
+	</div>
+
+
+
+	<ul class="dropcordion">
+		<li class="first"><a href="#">Normal</a></li>
+
+		<li class="drop-down">
+			<span tabindex="1">Drop-Down One</span>
+			<ul class="sub-menu">
+				<li><a href="#">Normal Link</a>
+				</li><li><a href="#">Another One</a>
+				</li><li class="last"><a href="#">Some More</a>
+			</li></ul>
+		</li>
+
+		<li class="drop-down">
+			<span tabindex="2">Drop-Down Two</span>
+			<ul class="sub-menu">
+				<li><a href="#">Normal Link</a>
+				</li><li class="last"><a href="#">Another One</a>
+			</li></ul>
+		</li>
+
+		<li><a href="#">Normal</a></li>
+		<li class="last"><a href="#">Normal</a></li>
+	</ul>
+
+
+
+
+</body></html>
